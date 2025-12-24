@@ -630,8 +630,12 @@ body {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header-container {
-    padding: 1rem 20px;
+    padding: 0.75rem 0;
   }
 
   .nav {
@@ -644,6 +648,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .nav.active {
@@ -659,7 +664,8 @@ body {
   }
 
   .hero {
-    padding: 140px 0 60px;
+    padding: 100px 0 60px;
+    min-height: auto;
     text-align: center;
   }
 
@@ -668,8 +674,36 @@ body {
     gap: 2rem;
   }
 
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-trust {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .hero-actions {
     justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .credentials {
+    padding: 2rem 0;
   }
 
   .credentials-grid {
@@ -677,13 +711,41 @@ body {
     gap: 1.5rem;
   }
 
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .about-address .maps-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .service-details {
@@ -691,7 +753,7 @@ body {
   }
 
   .banks-logos {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .banks-logos img {
@@ -700,6 +762,11 @@ body {
 
   .process-steps {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .step {
+    padding: 1.5rem;
   }
 
   .contact-content {
@@ -707,15 +774,18 @@ body {
     gap: 2rem;
   }
 
-  .about-address,
   .contact-item {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
   }
 
-  .maps-link {
-    margin-left: 0;
-    margin-top: 0.5rem;
+  .contact-actions {
+    gap: 0.75rem;
+  }
+
+  .footer {
+    padding: 2rem 0 1rem;
   }
 
   .floating-ctas {
@@ -723,14 +793,17 @@ body {
     bottom: auto;
     top: 20px;
     right: 20px;
+    gap: 0.75rem;
+  }
+
+  .floating-cta {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
   .hero-actions,
   .contact-actions {
     flex-direction: column;
@@ -743,7 +816,29 @@ body {
     justify-content: center;
   }
 
+  .hero-trust {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .trust-item {
+    font-size: 0.875rem;
+  }
+
   .services-grid {
     gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.25rem;
+  }
+
+  .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 0.875rem;
   }
 }
