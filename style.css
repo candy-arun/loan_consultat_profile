@@ -842,3 +842,42 @@ body {
     font-size: 0.875rem;
   }
 }
+/* ===== MOBILE UX OVERRIDES (PRO) ===== */
+
+@media (max-width: 768px) {
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .profile-card img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0;
+  }
+
+  .service-card {
+    text-align: left;
+  }
+
+  .service-icon {
+    margin: 0 0 0.5rem;
+  }
+
+  .floating-ctas {
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    height: 48px;
+    font-size: 0.95rem;
+  }
+}
